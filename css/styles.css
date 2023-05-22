@@ -1,0 +1,254 @@
+/*PALETA DE COLORES*/
+/*FUENTES*/
+/*RESOLUCIONES*/
+/*SEPARACIONES*/
+/*Estilos comunes para las secciones*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #835c36;
+  color: #b88a49;
+}
+
+.nav-link,
+.nav-link.active,
+.navbar-nav .nav-link.active {
+  color: black;
+}
+.nav-link:hover,
+.nav-link.active:hover,
+.navbar-nav .nav-link.active:hover {
+  color: black;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.carousel-item img {
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 70vh;
+    padding: 0px 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 70vh;
+    padding: 0px 400px;
+  }
+}
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+footer .container-redes a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones-form {
+  border: solid 1px black;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+}
+.botones-form:hover {
+  background-color: #b88a49;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (min-width: 992px) {
+  .cartas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+}
+.card h5, .card p {
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.container-labels {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.container-labels label {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: black;
+}
+
+#cabello, #barba, #afeitado, #todos {
+  display: none;
+}
+
+.cabello, .barba, .afeitado {
+  display: none;
+}
+
+#cabello:checked ~ .cartas .cabello,
+#barba:checked ~ .cartas .barba,
+#afeitado:checked ~ .cartas .afeitado {
+  display: flex;
+}
+
+#todos:checked ~ .cartas .cabello,
+#todos:checked ~ .cartas .barba,
+#todos:checked ~ .cartas .afeitado {
+  display: flex;
+}
+
+#rem, #gorras, #todo {
+  display: none;
+}
+
+.rem, .gorras, .todo {
+  display: none;
+}
+
+#rem:checked ~ .cartas .rem,
+#gorras:checked ~ .cartas .gorras {
+  display: flex;
+}
+
+#todo:checked ~ .cartas .gorras,
+#todo:checked ~ .cartas .rem {
+  display: flex;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (min-width: 992px) {
+  .cartas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+}
+.card h5, .card p {
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.consejos {
+  color: white;
+  background-color: black;
+}
+
+.parrafo {
+  background-color: white;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

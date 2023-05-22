@@ -1,0 +1,58 @@
+#rem, #gorras, #todo{
+    display: none;
+}
+
+.rem, .gorras, .todo{
+    display: none;
+}
+
+#rem:checked ~ .cartas .rem,
+#gorras:checked ~ .cartas .gorras{
+    display: flex;
+}
+
+
+#todo:checked ~ .cartas .gorras,
+#todo:checked ~ .cartas .rem{
+    display: flex;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (min-width: $desktop) {
+
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: $desktopXG) {
+
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+.card h5, .card p{
+    color: black;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}

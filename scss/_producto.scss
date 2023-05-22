@@ -1,0 +1,74 @@
+.cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (min-width: $desktop) {
+
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: $desktopXG) {
+
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+.card h5, .card p{
+    color: black;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.container-labels{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.container-labels label{
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: black;
+}
+
+#cabello, #barba, #afeitado, #todos{
+    display: none;
+}
+
+.cabello, .barba, .afeitado{
+    display: none;
+}
+
+#cabello:checked ~ .cartas .cabello,
+#barba:checked ~ .cartas .barba,
+#afeitado:checked ~ .cartas .afeitado{
+    display: flex;
+}
+
+
+#todos:checked ~ .cartas .cabello,
+#todos:checked ~ .cartas .barba,
+#todos:checked ~ .cartas .afeitado{
+    display: flex;
+}
+
